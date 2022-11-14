@@ -218,7 +218,7 @@ def pregunta_03():
             OneHotEncoder(),
             make_column_selector(dtype_include=object),
         ),
-        remainder=_'passthrough',
+        remainder='passthrough',
     )
 
     # Cree un pipeline que contenga el columnTransformer y el modelo SVC.
